@@ -11,18 +11,25 @@ class Snake:
 
     def __init__(self):
         self.turtles = []
-
-        for position in STARTING_POSITIONS:
-            turtle_1 = Turtle("square")
-            turtle_1.color("white")
-            turtle_1.penup()
-            turtle_1.goto(position)
-            self.turtles.append(turtle_1)
-
+        self.create_snake()
         self.head = self.turtles[0]
 
+    def create_snake(self):
+        for position in STARTING_POSITIONS:
+            self.add_turtle(position)
+
+    def add_turtle(self, position):
+        turtle_1 = Turtle("square")
+        turtle_1.color("white")
+        turtle_1.penup()
+        turtle_1.goto(position)
+        self.turtles.append(turtle_1)
+
+    def extend(self):
+        self.add_turtle(self.turtles[-1].position())
+
     def move(self):
-        for turtle_num in range(start=len(self.turtles) - 1, stop=0, step=-1):
+        for turtle_num in range(len(self.turtles) - 1, 0, -1):
             new_x = self.turtles[turtle_num - 1].xcor()
             new_y = self.turtles[turtle_num - 1].ycor()
             self.turtles[turtle_num].goto(new_x, new_y)
