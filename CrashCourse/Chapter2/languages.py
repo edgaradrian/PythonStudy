@@ -13,3 +13,5 @@ print(f"{favorite_language.lstrip()}")
 print(f"{favorite_language.strip()}")
 
 
+
+
