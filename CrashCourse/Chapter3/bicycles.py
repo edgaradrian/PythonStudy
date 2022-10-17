@@ -39,3 +39,11 @@ print(motorcycles2)
 #Inserting elements into a List
 motorcycles.insert(0, 'Kawasaki')
 print(motorcycles)
+
+#Removing an item using the 'del' statement
+del motorcycles[0]
+print(motorcycles)
+
+del motorcycles[1]
+print(motorcycles)
+
