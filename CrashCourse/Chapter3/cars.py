@@ -23,3 +23,6 @@ print(cars)
 print(cars)
 cars.reverse()
 print(cars)
+
+#Finding the length of a List
+print(len(cars))
