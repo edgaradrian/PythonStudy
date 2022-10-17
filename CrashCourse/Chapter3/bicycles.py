@@ -24,3 +24,14 @@ print(motorcycles)
 
 motorcycles[0] = 'ducati'
 print(motorcycles)
+
+#Adding elements to the end of a List
+motorcycles.append('honda')
+print(motorcycles)
+
+motorcycles2 = []
+motorcycles2.append('ducati')
+motorcycles2.append('honda')
+motorcycles2.append('yamaha')
+motorcycles2.append('suzuki')
+print(motorcycles2)
