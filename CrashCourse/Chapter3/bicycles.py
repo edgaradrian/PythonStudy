@@ -35,3 +35,7 @@ motorcycles2.append('honda')
 motorcycles2.append('yamaha')
 motorcycles2.append('suzuki')
 print(motorcycles2)
+
+#Inserting elements into a List
+motorcycles.insert(0, 'Kawasaki')
+print(motorcycles)
