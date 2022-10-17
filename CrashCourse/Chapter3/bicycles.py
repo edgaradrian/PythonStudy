@@ -1,3 +1,6 @@
+from os import remove
+
+
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles)
 
@@ -63,4 +66,9 @@ print(motorcycles)
 #Popping items from any positionin a List
 first_owned = motorcycles.pop(0)
 print(f"The first motorcycle I owned was a {first_owned.title()}")
+
+#Removing an item by value
+print(motorcycles)
+motorcycles.remove('honda')
+print(motorcycles)
 
