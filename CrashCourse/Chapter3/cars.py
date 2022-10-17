@@ -19,3 +19,7 @@ print(sorted(cars))
 print("\nHere is the original list again:")
 print(cars)
 
+#Printing a List in reverse order
+print(cars)
+cars.reverse()
+print(cars)
