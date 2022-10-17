@@ -55,5 +55,12 @@ print(popped_motorcycles)
 last_owned = motorcycles.pop()
 print(f"The last motorcycle I owned was a {last_owned.title()}")
 
+#Preparing next exercise
+motorcycles.append('honda')
+motorcycles.insert(0, 'Kawasaki')
+print(motorcycles)
 
+#Popping items from any positionin a List
+first_owned = motorcycles.pop(0)
+print(f"The first motorcycle I owned was a {first_owned.title()}")
 
