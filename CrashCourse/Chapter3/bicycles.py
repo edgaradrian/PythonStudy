@@ -1,6 +1,3 @@
-from email import message
-
-
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles)
 
@@ -20,3 +17,10 @@ print(bicycles[-1])
 #pulling the first bicycle from the list and composing a message using that value
 message = f"The first bicycle is {bicycles[0].title()}"
 print(message)
+
+#Modifying Elements in a List
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+
+motorcycles[0] = 'ducati'
+print(motorcycles)
