@@ -1,3 +1,4 @@
 magicians = ['abril', 'alissa', 'astrid']
 for magician in magicians:
-    print(magician)
+    print(magician.title())
+    print(f"{magician.title()} ese fue un gran truco")
