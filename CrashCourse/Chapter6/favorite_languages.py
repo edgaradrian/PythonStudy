@@ -18,3 +18,16 @@ print(point_value)
 for name, language_loop in favorite_languages.items():
     print(f"{name.title()}'s favorite language is {language_loop.title()}")
 
+#Looping Through All the Keys in a Dictionary
+for name_key in favorite_languages.keys():
+    print(name_key.title())
+
+sisters = ['abril', 'alissa']
+for name_loop_key in favorite_languages.keys():
+    print(f"Hola {name_loop_key.title()}")
+
+    if name_loop_key in sisters:
+        lang = favorite_languages[name_loop_key].title()
+        print(f"\t{name_loop_key.title()}, I see you love {lang.title()}")    
+
+
