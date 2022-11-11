@@ -2,7 +2,8 @@ favorite_languages = {
     'adrian': 'objective-c',
     'dulce': 'c',
     'abril': 'rust',
-    'alissa': 'kotlin'
+    'alissa': 'kotlin',
+    'miranda': 'rust'
 }
 
 language = favorite_languages['dulce'].title()
@@ -34,3 +35,12 @@ for name_loop_key in favorite_languages.keys():
 #Looping Through a Dictionary’s Keys in a Particular Order
 for name_sorted in sorted(favorite_languages.keys()):
     print(f"{name_sorted.title()}, thank you for taking the poll")
+
+#Looping Through All Values in a Dictionary
+print("The following languages have been mentioned:")
+for language_0 in favorite_languages.values():
+    print(language_0.title())
+
+print("The following languages have been mentioned (checking for repeats):")
+for language_0 in set(favorite_languages.values()):
+    print(language_0.title())
