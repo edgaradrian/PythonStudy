@@ -7,3 +7,10 @@ favorite_languages = {
 
 language = favorite_languages['dulce'].title()
 print(f"Dulce's favorite language is {language}")
+
+#Using get() to Access Values
+alien_51 = {'color': 'cyan', 'speed': 'slow'}
+
+point_value = alien_51.get('points', 'No point value assigned.')
+print(point_value)
+
